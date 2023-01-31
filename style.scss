@@ -50,12 +50,18 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #EFF6F0;
     margin: 2rem;
-
+    // how to center in the body
+     display : flex;
+     flex-direction: column;
+    //  justify-content: center;
+     align-items: center;
 .header{
     // border: 2px solid red;
     @extend %flex;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
+    border: 2px solid red;
     .icon{
         @extend %flex2;
         img{
@@ -104,16 +110,15 @@ body{
 main{
     @extend %flex;
     border: 2px solid red;
-    @extend %flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    align-items: center;
     margin: 0;
-    // width: 45rem;
     margin: 5em;      
     .portion_main{
-        border: 2px solid red;
-
+        // border: 2px solid red;
+        margin-left: 3rem;
         .main_text{
-            width: 40rem;
+            width: 80rem;
             h1{
                 width:60rem;
                 @extend %textfont;
@@ -141,36 +146,54 @@ main{
         }
         .Customers{
             @extend %flex;
-
             .Customer_images{
-                border: 2px solid red;
                 position: relative;
-
-                .Cus_image1{
-                    position: relative;
-                    left: 0;
-                    right: 20em;
-                }
                 .Cus_image2{
                     position: relative;
-                    left: 0;
-                    right: 0;
+
+                    right: 1.6rem;
+                }
+                .Cus_image3{
+                    position: relative;
+                    right: 3.2rem;
+                }
+
+            }
+        }
+        .Happy_customer{
+            h4{
+                @extend %textfont;
+
+            }
+            .Rating{
+
+                @extend %flex;
+                img{
+                    width: 1rem;
+                    margin-right: 0.5rem;
+                }
+                p{
+                    @extend %textfont;
+                    font-size: 1.2rem;
+                    color: #6E716E;
+
                 }
             }
         }
     }
     .front_images{
-
+        width: 80rem;
         position: relative;
         // how to overlap two images over each other
-        border: 2px red solid;
+        // border: 2px red solid;
         .Circle{
+            width: 50rem;
             position: absolute;
             // position: left;
             // width: 50em;
-            top: 10em;
-            left: 10em;
-            right: 0;
+            top: 1em;
+            left: 1rem;
+            right: 5;
             z-index: 1;
         }
         .front_pic{
@@ -178,7 +201,7 @@ main{
             position: relative;
             top: 0;
             left: 0;
-            right: 0;
+            right: 5rem;
             z-index: 2;
         }
         
