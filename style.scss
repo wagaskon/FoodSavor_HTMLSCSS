@@ -29,7 +29,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
 }
 $Whitecolor: #FFFFFF;
 $GreenColor: #7EB685;
@@ -61,7 +61,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    border: 2px solid red;
+    // border: 2px solid red;
     .icon{
         @extend %flex2;
         img{
@@ -109,106 +109,121 @@ body{
 }
 main{
     @extend %flex;
-    border: 2px solid red;
-    // justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    margin: 5em;      
-    .portion_main{
-        // border: 2px solid red;
-        margin-left: 3rem;
-        .main_text{
-            width: 80rem;
-            h1{
-                width:60rem;
-                @extend %textfont;
-                font-size: 10em;
-                // line-height: 94px;
-            }
-            ins{
-                text-decoration: none;
-                color: $GreenColor;
-                
-            }
-            p{                
-                width: 21.5em;
-                font-size: 1.5em;
-                // margin-left: 1em;
-                margin-right: 2em;
-                text-align: left;
-            }
-        }
-        
-        button{
-            @extend %button;
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
-        .Customers{
-            @extend %flex;
-            .Customer_images{
-                position: relative;
-                .Cus_image2{
-                    position: relative;
+    // border: 2px solid purple;
+         
+    width: 100%;
+    .main_content{
+        @extend %flex;
+        justify-content: space-between;
+        max-width: 60%;
+        align-items: center;
+        .portion_main{
+            // border: 2px solid red;
+            margin-left: 5rem;
+            .main_text{
+            // border: 2px solid red;
 
-                    right: 1.6rem;
-                }
-                .Cus_image3{
-                    position: relative;
-                    right: 3.2rem;
-                }
-
-            }
-        }
-        .Happy_customer{
-            h4{
-                @extend %textfont;
-
-            }
-            .Rating{
-
-                @extend %flex;
-                img{
-                    width: 1rem;
-                    margin-right: 0.5rem;
-                }
-                p{
+                // width: 0%;
+                h1{
+                    width:60rem;
                     @extend %textfont;
-                    font-size: 1.2rem;
-                    color: #6E716E;
-
+                    font-size: 7rem;
+                    // line-height: 94px;
+                }
+                ins{
+                    text-decoration: none;
+                    color: $GreenColor;
+                    
+                }
+                p{                
+                    width: 21.5em;
+                    font-size: 1.5em;
+                    // margin-left: 1em;
+                    margin-right: 2em;
+                    text-align: left;
+                }
+            }
+            
+            button{
+                @extend %button;
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+            .Customers{
+                @extend %flex;
+                .Customer_images{
+                    position: relative;
+                    .Cus_image2{
+                        position: relative;
+    
+                        right: 1.6rem;
+                    }
+                    .Cus_image3{
+                        position: relative;
+                        right: 3.2rem;
+                    }
+    
+                }
+            }
+            .Happy_customer{
+                h4{
+                    @extend %textfont;
+    
+                }
+                .Rating{
+    
+                    @extend %flex;
+                    img{
+                        width: 1rem;
+                        margin-right: 0.5rem;
+                    }
+                    p{
+                        @extend %textfont;
+                        font-size: 1.2rem;
+                        color: #6E716E;
+    
+                    }
                 }
             }
         }
-    }
-    .front_images{
-        width: 80rem;
-        position: relative;
-        // how to overlap two images over each other
-        // border: 2px red solid;
-        .Circle{
-            width: 50rem;
-            position: absolute;
-            // position: left;
-            // width: 50em;
-            top: 1em;
-            left: 1rem;
-            right: 5;
-            z-index: 1;
-        }
-        .front_pic{
-            width: 50em;
-            position: relative;
-            top: 0;
-            left: 0;
-            right: 5rem;
-            z-index: 2;
-        }
         
+
+        .front_images{
+            width: 60%;
+            // height: 80%;
+            position: relative;
+            // how to overlap two images over each other
+            // border: 2px red solid;
+            .Circle{
+                width: 40rem;
+                position: absolute;
+                
+                top: 1em;
+                left: 1rem;
+                right: 5;
+                z-index: 1;
+            }
+            .front_pic{
+                width: 40rem;
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 5rem;
+                z-index: 2;
+            }
+            
+        }
+
     }
-    // img{
-    //     width: ;
-    // }
+   
+    
 }
+
+.section_1{
+    border: 2px solid red;
+    margin-top: 50rem;
+}
+
+
 
 }
