@@ -1,6 +1,6 @@
 // how to import front from google fonts
 @import url('https://fonts.google.com/specimen/Roboto');
-
+@import url('https://fonts.google.com/specimen/Work+Sans')
 
 *{
     margin: 0;
@@ -98,20 +98,31 @@ body{
 main{
     @extend %flex;
     border: 2px solid red;
+    
     .portion_main{
 
-        .main_text{
+        // .main_text{
             h1{
-                font-weight: 10rem;
-                margin-bottom: 2em;
+                font-weight: 30rem;
+                // margin-bottom: 2em;
+            }
+            .para{
+                
+                color: red;
+                margin-right: 20em;
             }
         }
+        
         button{
             @extend %button;
-            margin-top: 2em;
+            margin-top: 1em;
+            margin-bottom: 1em;
         }
-    }
+    // }
     
+}
+.para{
+    color: red;
 }
 .section_1{
 
