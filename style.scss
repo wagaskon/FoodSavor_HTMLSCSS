@@ -228,6 +228,7 @@ main{
 
     @extend %textfont;
     font-family: 'open sans';
+    font-weight: normal;
    
     .sub_section1{
         
@@ -240,59 +241,105 @@ main{
     }
     }
 
-}
 .Declaration1{
+    @extend %flex2;
+    flex-direction: column;
     text-align: center;
+    // border: 2px solid purple;
+
     p{
         color: $GreenColor;
         font-size: 2rem;
         margin-bottom: 1rem;
-
-
     }
     h1{
         font-family: 'work sans', sans-serif;
         width: 40rem;
         font-size: 3rem;
+        // border: 2px solid red;
 
     }   
     
 }
-// .section_2{
-//     border: 2px solid red;
+
+
 .Feed_Sub{
     @extend %flex;
-    border: 2px solid red;
-
-    
-
+    // border: 2px solid red;
     text-align: center;
     .dev{
         font-family: 'work sans', sans-serif;
-        // font-family: 'roboto', sans-serif;
+        width: 30rem;
+        height: 30rem;
 
-        width: 25rem;
-        height: 25rem;
-        font-size: 2.2rem;
-        font-weight: normal;
-        // align-items: center;
-        padding: 3rem;
+        padding: 3.3rem;
         text-align: left;
-
         background-color: $GreenColor2;
-        // width: 20rem;
         margin: 3rem;
         border-radius: 3rem;
-        b{
-            font-family: 'work sans', sans-serif;
-            // font-family: 'roboto', sans-serif;
-            font-size: 1.8rem;
-            // margin-bottom: 1rem;
+        margin-top: 3rem;
+        @extend %flex;
+        flex-direction: column;
+        
+        .Text_feed{
+            height: 40rem;
+            // border: 2px solid red;
+
+            @extend %flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p{
+                font-size: 2.2rem;
+                font-weight: normal;
+                margin-bottom: 1rem;
+            }
+            .star_rating{
+                // margin-top: 1.5rem;
+                img{
+                    
+                    width: 2rem;
+                    margin: 0.5rem;
+                }
+
+                b{
+                    font-family: 'work sans', sans-serif;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        .commas{
+            color: $GreenColor;
+            font-size: 9rem;
+            width: 1rem;
+            height: 1rem;
+            position: relative;
+            top: -3rem;
+            right: 3rem;
+            // border: 2px solid red;
         }
     }
-    .cus1_feedback{
-        justify-content: center;
+    
+}
+footer{
+    @extend %flex2;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 70%;
+    height: 10rem;
+    // height: 30%;
+     margin: 3rem 0;
+     padding: 1rem;
+     border-radius: 1rem;
+     font-family: 'roboto', sans-serif;
+    //  font-size: 1rem;
+    .btn{
+        @extend %button;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
+
+}
+
 }
 
 // }
