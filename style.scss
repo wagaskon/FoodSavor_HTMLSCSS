@@ -1,6 +1,6 @@
 // how to import front from google fonts
 @import url('https://fonts.google.com/specimen/Roboto');
-@import url('https://fonts.google.com/specimen/Work+Sans')
+@import url('https://fonts.google.com/specimen/Work+Sans');
 
 *{
     margin: 0;
@@ -8,6 +8,10 @@
     box-sizing: border-box;
     outline: none;
 
+}
+:root{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 %flex{
     display: flex;
@@ -25,7 +29,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
 }
 $Whitecolor: #FFFFFF;
 $GreenColor: #7EB685;
@@ -41,12 +45,14 @@ $GreenColor: #7EB685;
     color: $Whitecolor;
 }
 
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #EFF6F0;
+    margin: 2rem;
 
 .header{
-    border: 2px solid red;
+    // border: 2px solid red;
     @extend %flex;
     justify-content: space-between;
     align-items: center;
@@ -98,18 +104,33 @@ body{
 main{
     @extend %flex;
     border: 2px solid red;
-    
+    @extend %flex;
+    justify-content: space-between;
+    margin: 0;
+    // width: 45rem;
+    margin: 5em;      
     .portion_main{
+        border: 2px solid red;
 
-        // .main_text{
+        .main_text{
+            width: 40rem;
             h1{
-                font-weight: 30rem;
-                // margin-bottom: 2em;
+                width:60rem;
+                @extend %textfont;
+                font-size: 10em;
+                // line-height: 94px;
             }
-            .para{
+            ins{
+                text-decoration: none;
+                color: $GreenColor;
                 
-                color: red;
-                margin-right: 20em;
+            }
+            p{                
+                width: 21.5em;
+                font-size: 1.5em;
+                // margin-left: 1em;
+                margin-right: 2em;
+                text-align: left;
             }
         }
         
@@ -118,13 +139,53 @@ main{
             margin-top: 1em;
             margin-bottom: 1em;
         }
-    // }
-    
-}
-.para{
-    color: red;
-}
-.section_1{
+        .Customers{
+            @extend %flex;
 
+            .Customer_images{
+                border: 2px solid red;
+                position: relative;
+
+                .Cus_image1{
+                    position: relative;
+                    left: 0;
+                    right: 20em;
+                }
+                .Cus_image2{
+                    position: relative;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .front_images{
+
+        position: relative;
+        // how to overlap two images over each other
+        border: 2px red solid;
+        .Circle{
+            position: absolute;
+            // position: left;
+            // width: 50em;
+            top: 10em;
+            left: 10em;
+            right: 0;
+            z-index: 1;
+        }
+        .front_pic{
+            width: 50em;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+        
+    }
+    // img{
+    //     width: ;
+    // }
 }
+
 }
