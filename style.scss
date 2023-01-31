@@ -33,6 +33,7 @@
 }
 $Whitecolor: #FFFFFF;
 $GreenColor: #7EB685;
+$GreenColor2:#DEEDE0;
 
 
 %button{
@@ -220,10 +221,78 @@ main{
 }
 
 .section_1{
+    margin-top: 5rem;
+    // text-align: center;
+    @extend %flex2;
+    flex-direction: column;
+
+    @extend %textfont;
+    font-family: 'open sans';
+   
+    .sub_section1{
+        
+        .imagez{
+            background-color: $GreenColor2;
+            padding: 3rem;
+            border-radius: 3rem;
+            margin: 3rem;
+        }
+    }
+    }
+
+}
+.Declaration1{
+    text-align: center;
+    p{
+        color: $GreenColor;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+
+    }
+    h1{
+        font-family: 'work sans', sans-serif;
+        width: 40rem;
+        font-size: 3rem;
+
+    }   
+    
+}
+// .section_2{
+//     border: 2px solid red;
+.Feed_Sub{
+    @extend %flex;
     border: 2px solid red;
-    margin-top: 50rem;
+
+    
+
+    text-align: center;
+    .dev{
+        font-family: 'work sans', sans-serif;
+        // font-family: 'roboto', sans-serif;
+
+        width: 25rem;
+        height: 25rem;
+        font-size: 2.2rem;
+        font-weight: normal;
+        // align-items: center;
+        padding: 3rem;
+        text-align: left;
+
+        background-color: $GreenColor2;
+        // width: 20rem;
+        margin: 3rem;
+        border-radius: 3rem;
+        b{
+            font-family: 'work sans', sans-serif;
+            // font-family: 'roboto', sans-serif;
+            font-size: 1.8rem;
+            // margin-bottom: 1rem;
+        }
+    }
+    .cus1_feedback{
+        justify-content: center;
+    }
 }
 
-
-
-}
+// }
