@@ -1,6 +1,6 @@
 # FoodSavor Named Project for learning SCSS
 
-The design is taken from [Jetsetter Figma Design Link](https://www.figma.com/community/file/1075546859187487919) Thanks to them for this design.
+The design is taken from [Jetsetter Figma Design Link](https://www.figma.com/community/file/1075546859187487919) Thanks to him for this design.
 
 
 ## Table of contents
@@ -26,8 +26,8 @@ This a practice project for learning scss.
 
 ### Links
 
-- Solution URL: [Solution and Live Site](https://codepen.io/wagaskon/pen/MWBZeeR)
-- Live Site URL: [Live Site](https://codepen.io/wagaskon/pen/MWBZeeR)
+- Solution URL: [Codepin](https://codepen.io/wagaskon/pen/MWBZeeR)
+- Live Site URL: [Deployed on Netlify](https://master--fluffy-treacle-4fb6d1.netlify.app/)
 
 ## My process
 
