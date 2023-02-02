@@ -13,8 +13,7 @@ The design is taken from [Jetsetter Figma Design Link](https://www.figma.com/com
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [My Social Links](#my-social-links)
 
 
 ## Overview
@@ -37,61 +36,112 @@ This a practice project for learning scss.
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Scaled CSS (using rem)
+- SCSS
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project I learned many things like flexbox, SCSS instead of Custom CSS and in SCSS I learned nesting, variables, importing fonts, varibles storing many styles etc. I also tried to keep the design in Semantic HTML.
+The purpose of this project was to get back into the programming after my gap in practice.
 
-To see how you can add code snippets, see below:
+The over structure (overview) of the HTML is as follows:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<body>
+    <header class="header">
+        <div class="icon">
+        </div>
+        <nav>
+        </nav>
+        <button class="btn">Sign Up</button>
+    </header>
+    <main>
+        <div class="main_content">
+            <div class="portion_main">                
+                <button> Get started </button>
+                <div class="Customers">    
+                </div>
+            </div>
+            <div class="front_images">
+            </div>
+        </div>
+    </main>
+
+    <section class="section_1 quest_text">
+        </div>
+        <div class="sub_section1">            
+        </div>
+    </section>
+    <section class="section_2 quest_text">
+        <div class="Declaration1">
+        </div>
+        <div class="Feed_Sub">
+            <div class="dev">  </div>
+            <div class="dev"> </div>
+
+            </div>
+            <div class="dev"> </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    </footer>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+Some of the SCSS properties I really liked are:
+
+```scss
+%flex{
+    display: flex;
+}
+%flex1{
+    display: flex;
+    justify-content: center;
+}
+%flex2{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+%textfont{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+}
+$Whitecolor: #FFFFFF;
+$GreenColor: #7EB685;
+$GreenColor2:#DEEDE0;
+
+
+%button{
+    width: 25rem;
+    height: 7rem;
+    background-color: $GreenColor;
+    border: none;;
+    border-radius: 5rem;
+    @extend %textfont;
+    color: $Whitecolor;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
+I also learned how to use the @extend property in SCSS. It is very useful to extend the properties of a class to another class. 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Media Queries can be added to make it responsive.
+- Animations and Transitions can be added to make it more interactive.
+- Multiple pages can be added to make it more interactive.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [W3School](https://www.w3schools.com/) - This resource is perfect for beginners. It has all the basic information about HTML, CSS, SCS, etc. It also has a lot of examples which are very helpful.
+- [SCSS official Docs](https://sass-lang.com/guide) - official docs of SCSS. It has all the information about SCSS and how to use it.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
-## Author
+## My Social Links
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [Wagaskon](https://twitter.com/wagaskon)
+- Dev.to - [Wagaskon](https://dev.to/waqaskhan)
+- Codepen - [Wagaskon](https://codepen.io/wagaskon)
+- Linkedin - [Wagaskon](https://www.linkedin.com/in/waqaskhandev/)
+- Github - [Wagaskon](https://github.com/wagaskon)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
