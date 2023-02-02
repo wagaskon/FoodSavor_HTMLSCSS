@@ -141,7 +141,7 @@ I also learned how to use the @extend property in SCSS. It is very useful to ext
 
 - Twitter - [Wagaskon](https://twitter.com/wagaskon)
 - Dev.to - [Wagaskon](https://dev.to/waqaskhan)
-- Codepen - [Wagaskon](https://codepen.io/wagaskon)
+- Codepen - [Wagaskon](https://codepen.io/wagaskon/pen/MWBZeeR)
 - Linkedin - [Wagaskon](https://www.linkedin.com/in/waqaskhandev/)
 - Github - [Wagaskon](https://github.com/wagaskon)
 
