@@ -139,9 +139,9 @@ I also learned how to use the @extend property in SCSS. It is very useful to ext
 
 ## My Social Links
 
-- Twitter - [Wagaskon](https://twitter.com/wagaskon)
-- Dev.to - [Wagaskon](https://dev.to/waqaskhan)
-- Codepen - [Wagaskon](https://codepen.io/wagaskon/pen/MWBZeeR)
-- Linkedin - [Wagaskon](https://www.linkedin.com/in/waqaskhandev/)
-- Github - [Wagaskon](https://github.com/wagaskon)
+- [Twitter](https://twitter.com/wagaskon)
+- [Dev.to](https://dev.to/waqaskhan)
+- [Codepen](https://codepen.io/wagaskon/pen/MWBZeeR)
+- [Linkedin](https://www.linkedin.com/in/waqaskhandev/)
+- [Github](https://github.com/wagaskon)
 
