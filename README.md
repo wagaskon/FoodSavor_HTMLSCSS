@@ -1,6 +1,6 @@
 # FoodSavor Named Project for learning SCSS
 
-The design is taken from [Jetsetter Figma Design Link](https://www.figma.com/community/file/1075546859187487919) Thanks to him for this design.
+The design is taken from [Jetsetter Figma Design Link](https://www.figma.com/community/file/1075546859187487919) Thanks to them for this design.
 
 
 ## Table of contents
