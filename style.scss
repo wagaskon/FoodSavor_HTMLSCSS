@@ -1,4 +1,3 @@
-// how to import front from google fonts
 @import url('https://fonts.google.com/specimen/Roboto');
 @import url('https://fonts.google.com/specimen/Work+Sans');
 
@@ -51,11 +50,9 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #EFF6F0;
     margin: 2rem;
-    // how to center in the body
-     display : flex;
-     flex-direction: column;
-    //  justify-content: center;
-     align-items: center;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
 .header{
     // border: 2px solid red;
     @extend %flex;
@@ -326,12 +323,10 @@ footer{
     background-color: white;
     width: 70%;
     height: 10rem;
-    // height: 30%;
      margin: 3rem 0;
      padding: 1rem;
      border-radius: 1rem;
      font-family: 'roboto', sans-serif;
-    //  font-size: 1rem;
     .btn{
         @extend %button;
         margin-top: 1rem;
@@ -341,5 +336,3 @@ footer{
 }
 
 }
-
-// }
